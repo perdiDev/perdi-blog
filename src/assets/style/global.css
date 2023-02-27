@@ -4,6 +4,6 @@
 
 @layer components {
   .text-coba {
-    @apply text-3xl text-red-500 font-bold w-full h-screen flex justify-center items-center;
+    @apply text-3xl text-sky-950 font-bold w-full h-screen flex justify-center items-center;
   }
 }
