@@ -2,11 +2,28 @@
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-	fontFamily: {
-		sans: ["Loto", 'sans-serif'],
-		mono: ["Roboto mono", "monospace"]
-	},
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
+      },
+    },
+    fontFamily: {
+      sans: ["Loto", "sans-serif"],
+      mono: ["Roboto mono", "monospace"],
+    },
     extend: {
+      spacing: {
+        128: "32rem",
+        144: "36rem",
+      },
+      borderRadius: {
+        "4xl": "2rem",
+      },
       colors: {
         sky: {
           50: "#E7E7EF",

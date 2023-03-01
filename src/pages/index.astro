@@ -8,9 +8,135 @@ import "../assets/style/global.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>Perdi</title>
   </head>
   <body>
-    <h1 class="text-coba">Perdi Astro Blog</h1>
+    <nav class="relative">
+      <div
+        class="container mx-auto flex items-center justify-between py-6 font-bold text-xl"
+      >
+        <div
+          class="w-fit h-fit py-2 px-4 rounded-lg rounded-tl-none bg-sky-700 text-white"
+        >
+          <h1>Perdi Dev</h1>
+        </div>
+        <ul class="flex gap-8 text-sky-700">
+          <li class="flex gap-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-smart-home"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105"
+              ></path>
+              <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0"></path>
+            </svg>
+            Home
+          </li>
+          <li class="flex gap-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-chess-rook"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M8 16l-1.447 .724a1 1 0 0 0 -.553 .894v2.382h12v-2.382a1 1 0 0 0 -.553 -.894l-1.447 -.724h-8z"
+              ></path>
+              <path d="M8 16l1 -9h6l1 9"></path>
+              <path d="M6 4l.5 3h11l.5 -3"></path>
+              <path d="M10 4v3"></path>
+              <path d="M14 4v3"></path>
+            </svg>
+            About
+          </li>
+          <li class="flex gap-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-article"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
+              ></path>
+              <path d="M7 8h10"></path>
+              <path d="M7 12h10"></path>
+              <path d="M7 16h10"></path>
+            </svg>
+            Blog
+          </li>
+          <li class="flex gap-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-book-2"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z"
+              ></path>
+              <path d="M19 16h-12a2 2 0 0 0 -2 2"></path>
+              <path d="M9 8h6"></path>
+            </svg>
+            Book
+          </li>
+          <li class="flex gap-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-address-book"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"
+              ></path>
+              <path d="M10 16h6"></path>
+              <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+              <path d="M4 8h3"></path>
+              <path d="M4 12h3"></path>
+              <path d="M4 16h3"></path>
+            </svg>
+            Guestbook
+          </li>
+        </ul>
+      </div>
+    </nav>
   </body>
 </html>
