@@ -1,0 +1,19 @@
+---
+const { pesan } = Astro.props
+---
+
+<main id="guestbook" class="container mt-24">
+  <div class="min-h-[70vh] flex flex-col items-center">
+    <div class="max-w-lg">
+      <img
+        src="/blog-post.png"
+        alt="perdi blog"
+        width="350"
+        class="h-96 w-96 object-contain mx-auto"
+      />
+      <h1 class="font-bold text-2xl text-sky-700 py-12">
+        {pesan}
+      </h1>
+    </div>
+  </div>
+</main>
