@@ -1,26 +1,43 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro"
+import MainLayout from "../layouts/MainLayout.astro";
 
-const pageTitle = "About"
+const pageTitle = "About";
 ---
 
 <MainLayout {pageTitle}>
-    
-    <section id="about" class="container min-h-[70vh]">
-        <div class="flex mt-24 lg:pt-8 pb-8 flex-wrap">
-            <div class="w-full lg:w-1/3">
-                <div class="">
-                    <img src="/profile.jpg" alt="Perdi Dev" class="rounded-2xl shadow-lg w-full h-fit object-cover object-center">
-                </div>
-            </div>
-            <div class="w-full lg:w-2/3 py-4">
-                <div class="lg:pl-8">
-                    <h1 class="lg:mt-4 mb-2 text-6xl lg:text-7xl font-extrabold text-sky-800">Perdi</h1>
-                    <span class="py-1 px-2 bg-sky-100 rounded-full text-sky-600 font-bold mt-4">Universitas Hasanuddin (2023)</span>
-                    <p class="text-xl font-medium text-sky-600 mt-4">Salam kenal semua, blog ini  didekasikan untuk jadi second brain atau tempat penyimpanan kedua dari otak saya. Seperti kebanyakan yang kita tahu bahwa otak selalu merekam segala hal. Namun, rekaman yang tersimpan tidak terstruktur dan tidak tertata dengan baik. Oleh karenanya, blog ini saya jadikan tempat untuk menuangkan ide atau pengetahuan baru yang saya dapatkan dengan terstruktur. Jadi silahkan dinikmati membacanya.</p>
-                </div>
-            </div>
+  <section id="about" class="container min-h-[70vh]">
+    <div class="flex mt-24 lg:pt-8 pb-8 flex-wrap">
+      <div class="w-full lg:w-1/3">
+        <div class="">
+          <img
+            src="/profile.jpg"
+            alt="Perdi Dev"
+            class="rounded-2xl shadow-lg w-full h-fit object-cover object-center"
+          />
         </div>
-    </section>
-
+      </div>
+      <div class="w-full lg:w-2/3 py-4">
+        <div class="lg:pl-8">
+          <h1
+            class="lg:mt-4 mb-2 text-6xl lg:text-7xl font-extrabold text-sky-800"
+          >
+            Perdi
+          </h1>
+          <span
+            class="py-1 px-2 bg-sky-100 rounded-full text-sky-600 font-bold mt-4"
+            >Universitas Hasanuddin (2023)</span
+          >
+          <p class="text-xl font-medium text-sky-600 mt-4">
+            Salam kenal semua, blog ini didekasikan untuk jadi second brain atau
+            tempat penyimpanan kedua dari otak saya. Seperti kebanyakan yang
+            kita tahu bahwa otak selalu merekam segala hal. Namun, rekaman yang
+            tersimpan tidak terstruktur dan tidak tertata dengan baik. Oleh
+            karenanya, blog ini saya jadikan tempat untuk menuangkan ide atau
+            pengetahuan baru yang saya dapatkan dengan terstruktur. Jadi
+            silahkan dinikmati membacanya.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </MainLayout>
