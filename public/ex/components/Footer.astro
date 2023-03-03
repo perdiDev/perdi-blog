@@ -1,0 +1,21 @@
+---
+const platform = "github";
+const username = "perdiDev";
+const repo = "astro-docs";
+
+import Social from "./Social.astro";
+---
+
+<style>
+  footer {
+    display: flex;
+    gap: 4px;
+    margin-top: 2rem;
+  }
+</style>
+
+<footer>
+  <Social platform="twitter" username="perdidev" />
+  <Social platform="github" username="perdiDev" />
+  <Social platform="youtube" username="perdiDev" />
+</footer>
