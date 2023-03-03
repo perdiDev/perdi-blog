@@ -17,50 +17,65 @@ import "../assets/style/global.css";
       class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent"
     >
       <div
-        class="container relative mx-auto flex items-center justify-between py-4 lg:py-2 font-bold text-xl"
+        class="container relative mx-auto flex items-center justify-between py-4 font-bold text-xl"
       >
         <div
           class="w-fit h-fit py-2 px-4 rounded-xl rounded-tl-none bg-sky-700 text-white"
         >
           <h1>Perdi Dev</h1>
         </div>
-        
-        <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
-          <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
-          <span class="hamburger-line transition duration-300 ease-in-out"></span>
-          <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+
+        <button
+          id="hamburger"
+          name="hamburger"
+          type="button"
+          class="absolute right-4 block lg:hidden"
+        >
+          <span
+            class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+          ></span>
+          <span class="hamburger-line transition duration-300 ease-in-out"
+          ></span>
+          <span
+            class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+          ></span>
         </button>
         <nav
           id="nav-menu"
-          class="absolute right-4 top-full hidden lg:w-fit rounded-lg bg-white p-4 pr-8 shadow-lg shadow-sky-500 lg:static lg:block lg:rounded-none lg:bg-transparent lg:shadow-none"
+          class="absolute right-4 top-full hidden lg:w-fit rounded-lg bg-white p-4 pr-8 shadow-lg shadow-sky-500 lg:pr-0 lg:p-0 lg:static lg:block lg:rounded-none lg:bg-transparent lg:shadow-none"
         >
           <ul class="flex flex-col lg:flex-row gap-4 text-sky-700">
-            <li
-              class="flex gap-1 hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-smart-home"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+            <li class="group">
+              <a
+                href="/"
+                class="flex gap-1 group-hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center"
               >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105"
-                ></path>
-                <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0"></path>
-              </svg>
-              Home
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-smart-home"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105"
+                  ></path>
+                  <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0"></path>
+                </svg>
+                Home
+              </a>
             </li>
-            <li
-              class="flex gap-1 hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center"
-            >
+            <li class="group">
+              <a
+                href="/"
+                class="flex gap-1 group-hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center"
+              >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-chess-rook"
@@ -83,10 +98,13 @@ import "../assets/style/global.css";
                 <path d="M14 4v3"></path>
               </svg>
               About
+            </a>
             </li>
-            <li
-              class="flex gap-1 hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center"
-            >
+            <li class="group">
+              <a
+                href="/"
+                class="flex gap-1 group-hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center"
+              >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-article"
@@ -108,10 +126,13 @@ import "../assets/style/global.css";
                 <path d="M7 16h10"></path>
               </svg>
               Blog
+            </a>
             </li>
-            <li
-              class="flex gap-1 hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center"
-            >
+            <li class="group">
+              <a
+                href="/"
+                class="flex gap-1 group-hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center"
+              >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-book-2"
@@ -131,34 +152,38 @@ import "../assets/style/global.css";
                 <path d="M9 8h6"></path>
               </svg>
               Book
+            </a>
             </li>
-            <li
-            class="flex gap-1 hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-address-book"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"
-              ></path>
-              <path d="M10 16h6"></path>
-              <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-              <path d="M4 8h3"></path>
-              <path d="M4 12h3"></path>
-              <path d="M4 16h3"></path>
-            </svg>
-            Guestbook
-          </li>
+            <li class="group">
+              <a
+                href="/"
+                class="flex gap-1 group-hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center"
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-address-book"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"
+                ></path>
+                <path d="M10 16h6"></path>
+                <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                <path d="M4 8h3"></path>
+                <path d="M4 12h3"></path>
+                <path d="M4 16h3"></path>
+              </svg>
+              Guestbook
+            </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -168,7 +193,9 @@ import "../assets/style/global.css";
       <div
         class="w-full h-fit mb-24 mt-44 flex flex-col justify-center items-center space-y-8 text-center"
       >
-        <h1 class="font-extrabold text-6xl lg:text-8xl text-sky-700">Perdi Blog</h1>
+        <h1 class="font-extrabold text-6xl lg:text-8xl text-sky-700">
+          Perdi Blog
+        </h1>
         <p class="font-semibold text-xl text-sky-600 max-w-xl">
           Blog ini berisi tulisan yang ditulis berdasarkan pengalaman dan
           pengetahuan pribadi.
@@ -178,7 +205,9 @@ import "../assets/style/global.css";
 
     <section id="best-blog" class="container">
       <div class="w-full p-4 py-8 lg:p-12 bg-sky-50 rounded-2xl lg:rounded-3xl">
-        <h1 class="text-3xl font-extrabold text-sky-700 mb-8 lg:mb-12">Blog Terbaik</h1>
+        <h1 class="text-3xl font-extrabold text-sky-700 mb-8 lg:mb-12">
+          Blog Terbaik
+        </h1>
         <div class="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">
           <div class="space-y-4 group">
             <div class="w-full aspect-video overflow-hidden rounded-xl">
@@ -188,7 +217,9 @@ import "../assets/style/global.css";
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-all ease-in rounded-xl"
               />
             </div>
-            <h2 class="text-xl md:text-2xl font-bold text-sky-700 group-hover:underline">
+            <h2
+              class="text-xl md:text-2xl font-bold text-sky-700 group-hover:underline"
+            >
               Membuat game super mario dengan bahasa C
             </h2>
           </div>
@@ -200,7 +231,9 @@ import "../assets/style/global.css";
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-all ease-in rounded-xl"
               />
             </div>
-            <h2 class="text-xl md:text-2xl font-bold text-sky-700 group-hover:underline">
+            <h2
+              class="text-xl md:text-2xl font-bold text-sky-700 group-hover:underline"
+            >
               Membuat game super mario dengan bahasa C
             </h2>
           </div>
@@ -212,7 +245,9 @@ import "../assets/style/global.css";
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-all ease-in rounded-xl"
               />
             </div>
-            <h2 class="text-xl md:text-2xl font-bold text-sky-700 group-hover:underline">
+            <h2
+              class="text-xl md:text-2xl font-bold text-sky-700 group-hover:underline"
+            >
               Membuat game super mario dengan bahasa C
             </h2>
           </div>
@@ -224,7 +259,9 @@ import "../assets/style/global.css";
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-all ease-in rounded-xl"
               />
             </div>
-            <h2 class="text-xl md:text-2xl font-bold text-sky-700 group-hover:underline">
+            <h2
+              class="text-xl md:text-2xl font-bold text-sky-700 group-hover:underline"
+            >
               Membuat game super mario dengan bahasa C
             </h2>
           </div>
