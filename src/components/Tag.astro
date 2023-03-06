@@ -1,0 +1,9 @@
+---
+const { tag } = Astro.props
+---
+
+<a
+href={`/tag/${tag.toLowerCase()}`}
+class="bg-sky-50 rounded-3xl py-2 px-4 text-lg font-semibold text-sky-700 border border-sky-700 hover:bg-sky-700 hover:text-white dark:bg-sky-700 dark:text-sky-100 dark:border-sky-100 dark:hover:bg-sky-100 dark:hover:text-sky-700 transition-all ease-in-out duration-500"
+>{tag}</a
+>
