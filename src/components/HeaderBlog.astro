@@ -1,0 +1,21 @@
+---
+const {frontmatter} = Astro.props
+
+const { title, pubDate, image } = frontmatter;
+---
+
+<header>
+  <img
+    src={`/${image.url}`}
+    alt={image.alt}
+    class="w-full h-auto max-h-96 object-cover object-center mx-auto rounded-lg"
+  />
+  <h1
+    class="mt-6 lg:mt-8 mb-1 text-4xl font-extrabold text-center text-sky-800"
+  >
+    {title}
+  </h1>
+  <p class="font-medium text-sm text-sky-600 mb-4 text-center">
+    {pubDate.slice(0, 10)}
+  </p>
+</header>
