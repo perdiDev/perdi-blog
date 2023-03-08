@@ -1,0 +1,17 @@
+---
+import { Icon } from 'astro-icon'
+
+const { icon, link } = Astro.props
+---
+<a
+href={link}
+class="p-2 relative aspect-square bg-sky-800 rounded-lg group text-white dark:text-sky-800 dark:bg-sky-100"
+>
+<Icon name={icon} width="30" height="30" stroke="currentColor" />
+<div class="absolute left-0 right-0 -bottom-2 px-2">
+  <div
+    class="bg-blue-800 h-1 rounded-full w-full scale-x-0 group-hover:scale-x-100 duration-300 transition-all"
+  >
+  </div>
+</div>
+</a>

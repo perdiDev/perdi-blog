@@ -1,0 +1,27 @@
+---
+import { Icon } from "astro-icon";
+
+const { icon, menu } = Astro.props;
+---
+
+
+<li class="group">
+    <a
+        href={`/${menu == "Home" ? "" : menu.toLowerCase()}`}
+        class="flex gap-1 group-hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center dark:group-hover:bg-sky-600"
+    >
+        <Icon 
+            name={icon}
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+        {menu}
+    </a>
+</li>

@@ -1,9 +1,10 @@
 ---
+import { Icon } from 'astro-icon';
 import HomeIcon from "../assets/svg/HomeIcon.astro";
 import ChessRookIcon from "../assets/svg/ChessRookIcon.astro";
-import ArticleIcon from "../assets/svg/ArticleIcon.astro";
 import Book2Icon from "../assets/svg/Book2Icon.astro";
 import AddressBookIcon from "../assets/svg/AddressBookIcon.astro";
+import NavMenuIcon from "./NavMenuIcon.astro"
 ---
 
 <nav
@@ -11,50 +12,11 @@ import AddressBookIcon from "../assets/svg/AddressBookIcon.astro";
   class="absolute right-4 top-full hidden lg:w-fit rounded-lg bg-white dark:bg-sky-800 p-4 pr-8 shadow-lg shadow-sky-500 lg:pr-0 lg:p-0 lg:static lg:block lg:rounded-none lg:bg-transparent lg:shadow-none"
 >
   <ul class="flex flex-col lg:flex-row gap-4 text-sky-700 dark:text-sky-100">
-    <li class="group">
-      <a
-        href="/"
-        class="flex gap-1 group-hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center dark:group-hover:bg-sky-600"
-      >
-        <HomeIcon />
-        Home
-      </a>
-    </li>
-    <li class="group">
-      <a
-        href="/about"
-        class="flex gap-1 group-hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center dark:group-hover:bg-sky-600"
-      >
-        <ChessRookIcon />
-        About
-      </a>
-    </li>
-    <li class="group">
-      <a
-        href="/blog"
-        class="flex gap-1 group-hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center dark:group-hover:bg-sky-600"
-      >
-        <ArticleIcon />
-        Blog
-      </a>
-    </li>
-    <li class="group">
-      <a
-        href="/book"
-        class="flex gap-1 group-hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center dark:group-hover:bg-sky-600"
-      >
-        <Book2Icon />
-        Book
-      </a>
-    </li>
-    <li class="group">
-      <a
-        href="/guestbook"
-        class="flex gap-1 group-hover:bg-sky-50 transition-all rounded-full w-fit h-fit py-2 px-4 items-center dark:group-hover:bg-sky-600"
-      >
-        <AddressBookIcon />
-        Guestbook
-      </a>
-    </li>
+    <!-- <NavMenuIcon icon="ri:home-6-line" menu="Home" /> -->
+    <NavMenuIcon icon="tabler:smart-home" menu="Home" />
+    <NavMenuIcon icon="tabler:brand-tripadvisor" menu="About" />
+    <NavMenuIcon icon="tabler:category" menu="Blog" />
+    <NavMenuIcon icon="tabler:book-2" menu="Book" />
+    <NavMenuIcon icon="tabler:notebook" menu="Guestbook" />
   </ul>
 </nav>
