@@ -8,9 +8,9 @@ const { frontmatter } = Astro.props;
 
 <MainLayout pageTitle="Blog">
   <main class="container mt-24">
-    <div class="p-4 lg:p-12 bg-sky-50 rounded-xl max-w-[800px] mx-auto">
+    <div class="p-4 lg:p-12 bg-sky-50 rounded-xl max-w-[800px] mx-auto dark:bg-sky-800">
       <HeaderBlog {frontmatter} />
-      <article class="prose prose-sky lg:prose-xl prose-ul:marker:text-sky-800 prose-li:marker:text-sky-800">
+      <article class="prose prose-sky lg:prose-xl prose-ul:marker:text-sky-800 prose-li:marker:text-sky-800 dark:prose-li:marker:text-sky-100 dark:prose-invert prose-a:hover:underline prose-a:hover:decoration-sky-700">
         <slot />
       </article>
     </div>

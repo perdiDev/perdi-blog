@@ -39,6 +39,18 @@ module.exports = {
           950: "#00010C",
         },
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            'blockquote p:first-of-type::before': {
+              content: 'no-open-quote',
+            },
+            'blockquote p:last-of-type::after': {
+              content: 'no-close-quote',
+            },
+          }
+        }
+      }
     },
   },
   plugins: [
