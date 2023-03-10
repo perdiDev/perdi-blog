@@ -39,5 +39,4 @@ const url = Astro.url.pathname
   <ul class="flex flex-col lg:flex-row gap-4 text-sky-700 dark:text-sky-100">
     {menu.map(m => (<NavMenuIcon icon={m.icon} menu={m.titleMenu} url={m.url} active={Astro.url.pathname == m.url ? true : false} />))}
   </ul>
-  {url}
 </nav>
