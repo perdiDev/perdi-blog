@@ -1,16 +1,23 @@
 ---
 import MainLayout from "../../layouts/MainLayout.astro";
-import BlogListSection from "../../components/BlogListSection.astro"
+import BlogListSection from "../../components/BlogListSection.astro";
 
-const pageTitle = "Blog"
+const allBlogPost = await Astro.glob("./*.md");
+
+const pageTitle = "Blog";
 ---
 
 <MainLayout {pageTitle}>
-    <section id="list-blog" class="container mt-24">
-        <div class="max-w-xl mx-auto">
-            <BlogListSection />
-            <BlogListSection />
-            <BlogListSection />
-        </div>
-    </section>
+  <section id="list-blog" class="container mt-24">
+    <div class="max-w-xl mx-auto">
+      {
+        allBlogPost.map((blogPost) => (
+          <BlogListSection
+          url={blogPost.url}
+            frontmatter={blogPost.frontmatter}
+          />
+        ))
+      }
+    </div>
+  </section>
 </MainLayout>

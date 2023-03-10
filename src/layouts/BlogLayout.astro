@@ -13,7 +13,9 @@ const { frontmatter } = Astro.props;
       class="p-4 lg:p-12 bg-sky-50 rounded-xl max-w-[800px] mx-auto dark:bg-sky-800"
     >
       <HeaderBlog {frontmatter} />
-      <Prose />
+      <Prose>
+        <slot />
+      </Prose>
     </div>
   </main>
 </MainLayout>
