@@ -1,35 +1,33 @@
 ---
-import NavMenuIcon from "./NavMenuIcon.astro"
+import NavMenuIcon from "./NavMenuIcon.astro";
 
 const menu = [
   {
     icon: "tabler:smart-home",
     titleMenu: "Home",
-    url: "/"
+    url: "/",
   },
   {
     icon: "tabler:brand-tripadvisor",
     titleMenu: "About",
-    url: "/about"
+    url: "/about",
   },
   {
     icon: "tabler:ghost",
     titleMenu: "Blog",
-    url: "/blog"
+    url: "/blog",
   },
   {
     icon: "tabler:book-2",
     titleMenu: "Book",
-    url: "/book"
+    url: "/book",
   },
   {
     icon: "tabler:notebook",
     titleMenu: "Guestbook",
-    url: "/guestbook"
-  }
-]
-
-console.log(Astro.url.pathname)
+    url: "/guestbook",
+  },
+];
 ---
 
 <nav
@@ -37,6 +35,15 @@ console.log(Astro.url.pathname)
   class="absolute right-4 top-full hidden lg:w-fit rounded-lg bg-white dark:bg-sky-800 p-4 pr-8 shadow-lg shadow-sky-500 lg:pr-0 lg:p-0 lg:static lg:block lg:rounded-none lg:bg-transparent lg:shadow-none"
 >
   <ul class="flex flex-col lg:flex-row gap-4 text-sky-700 dark:text-sky-100">
-    {menu.map(m => (<NavMenuIcon icon={m.icon} menu={m.titleMenu} url={m.url} active={Astro.url.pathname == m.url ? true : false} />))}
+    {
+      menu.map((m) => (
+        <NavMenuIcon
+          icon={m.icon}
+          menu={m.titleMenu}
+          url={m.url}
+          active={Astro.url.pathname == m.url ? true : false}
+        />
+      ))
+    }
   </ul>
 </nav>
